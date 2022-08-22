@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+.banner-box {
+    background-image: url('./images/desktop/image-header.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-position: left top; */
+}
+
+header {
+    display: flex;
+    padding: 0px 16px;
+    height: 64px;
+}
+
+header .logo-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    flex: 8;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    /* background-color: pink; */
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header .sign-up {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .sign-up button { 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;   
+    font-size: 12px;
+}
+
+header .menu-btn-box {
+    /* background-color: red; */
+    display: none;
+}
+
+.menu-btn-box button {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    border: none;
+    background-color: transparent;
+}
+
+.banner {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.banner h1 {
+    margin-bottom: 70px;
+    color: white;
+    position: center;
+}
+
+.box-two {
+    /* background-color: red; */
+    display: flex;
+    font-family: 'Barlow', sans-serif;
+
+
+}
+
+.box-two .col-1 {
+    flex: 1;
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-two .col-2 {
+    background-image: url('./images/desktop/image-transform.jpg');
+    background-repeat: no-repeat;
+    height: 450px;
+    flex: 1;
+    background-size: 100% 100%;
+}
+
+.col-1 .text-box {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col-1 .text-box > * {
+    width: 100%;
+}
+
+.col-1 .text-box h1 {
+    text-transform: capitalize;
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+}
+
+.col-1 .text-box p {
+    color: grey;
+    margin-bottom: 1.5rem;
+}
+
+.col-1 .text-box a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+}
+
+.col-2.second-row-col {
+    background-image: url('./images/desktop/image-stand-out.jpg');
+}
+
+.box-three {
+    display: flex;
+}
+
+
+.box-three .image-one {
+    background-repeat: no-repeat;
+    height: 400px;
+    flex: 1;
+    background-image: url('./images/desktop/image-photography.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+
+
+}
+.box-three .image-two {
+    background-repeat: no-repeat;
+    height: 400px;
+    flex: 1;
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.heading-third, .heading-fourth {
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.paragraph-fourth, .paragraph-third {
+    text-align: center;
+    line-height: 24px;
+}
+
+.box-fourth {
+    height: 400px;
+    display: flex;
+}
+
+.box-fourth div {
+    height: inherit;
+    flex: 1;
+    width: 100%;
+    background-size: cover;
+}
+
+.box-fourth .image-ek {
+    background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
+}
+
+.box-fourth .image-do {
+    background-image: url('./images/desktop/image-gallery-orange.jpg');
+}
+
+.box-fourth .image-teen {
+    background-image: url('./images/desktop/image-gallery-cone.jpg');
+}
+
+.box-fourth .image-chaar {
+    background-image: url('./images/desktop/image-gallery-sugarcubes.jpg');
+}
+
+.heading-four {
+    text-align: center;
+    font-size: 22px;
+    justify-content: center;
+    padding: 50px;
+    text-transform: lowercase;
+    color: rgb(46, 97, 90);
+    background-color: rgb(144, 255, 218)
+    
+}
+.heading-four nav{
+    flex: 8;
+
+}
+
+nav ul li {
+    margin: 0px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(46, 97, 90);
+    
+}
+.heading-four nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    column-gap: 40px;
+}
+.box-five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-five div {
+    margin: 0px 8px;
+}
+
+@media screen and (max-width: 576px) {
+
+    header nav, header .sign-up {
+        display: none;
+    }
+
+    header .menu-btn-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-two {
+        flex-direction: column;
+    }
+
+    .box-two .col-1 {
+        order: 2;
+        margin: 2rem 0px
+    }
+
+    .box-two .col-2 {
+        min-height: 300px;
+        order: 1;
+    }
+
+    .box-three {
+        flex-direction: column;
+        min-height: 800px;
+    }
+
+    .box-fourth {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2;
+        height: 400;
+    }
+
+    .box-fourth > div {
+        height: 200px;
+    }
+}
